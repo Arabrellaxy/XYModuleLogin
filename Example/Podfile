@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SalesManLogin_Example' do
+  pod 'SalesManLogin', :path => '../'
+
+  target 'SalesManLogin_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
