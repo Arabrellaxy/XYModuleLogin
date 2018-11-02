@@ -3,7 +3,7 @@ source 'https://github.com/Arabrellaxy/XYSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'SalesManLogin_Example' do
-    pod 'SalesManLogin',:path => '../'
+pod 'SalesManLogin',:path => '../'
   pod 'SalesManNetwork'
   pod 'SalesManGlobal'
   pod 'SalesManDataStorage'

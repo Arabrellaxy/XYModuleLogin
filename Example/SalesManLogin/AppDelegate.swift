@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SalesManLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let bundle1 = Bundle.init(for: ViewController.classForCoder())
+        let path = bundle1.path(forResource: "SalesManLogin", ofType: "bundle")!
+        
+        let bundle:Bundle = Bundle.init(path:path)!
+        let vc:ViewController = UIStoryboard.init(name: "Main", bundle: bundle).instantiateInitialViewController() as! ViewController
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
         return true
     }
 

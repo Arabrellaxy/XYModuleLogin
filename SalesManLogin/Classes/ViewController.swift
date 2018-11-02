@@ -7,15 +7,11 @@
 //
 
 import UIKit
-<<<<<<< HEAD
 import SalesManNetwork
 import SalesManGlobal
 import SalesManDataStorage
 public class ViewController: UIViewController {
-=======
 
-class ViewController: UIViewController {
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var inputContainerView: UIView!
     @IBOutlet weak var usernameTF: SWLeftViewTextFiled!
@@ -23,7 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var rememberPasswordBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var forgetPasswordBtn: UIButton!
-<<<<<<< HEAD
     @IBOutlet weak var inputContainerViewBottomCons: NSLayoutConstraint!
     var currentTextFieldRect:CGRect?
     var rememberPassword:Bool = false
@@ -71,34 +66,14 @@ extension ViewController:UITextFieldDelegate{
         }
         return true
     }
-=======
-    var rememberPassword:Bool = false
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.standardizeStyle()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }
 
 
-//MARK:UITextField Delegate
-extension ViewController:UITextFieldDelegate{
-    
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
-}
 
 //MARK: Button Action
 extension ViewController{
     @objc func rememberPasswordAction() {
         self.rememberPassword = !self.rememberPassword
-<<<<<<< HEAD
         self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
     }
     @objc func loginAction(){
@@ -143,12 +118,6 @@ extension ViewController{
         SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:self.usernameTF.text!,
                                                            SWLogin.password:self.passwordTF.text!,
                                                            SWGlobal.callBack:callBack])
-=======
-        self.rememberPasswordBtn.setImage(UIImage.init(named: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
-    }
-    @objc func loginAction(){
-        
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
     }
     @objc func forgetPasswordAction(){
         
@@ -164,26 +133,16 @@ extension ViewController{
         self.standardizeTFStyle(textField: self.passwordTF)
         
         self.usernameTF.placeholder = "请输入用户名"
-<<<<<<< HEAD
         self.usernameTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "user"))
-=======
-        self.usernameTF.leftView = UIImageView.init(image: UIImage.init(named: "user"))
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
         self.usernameTF.returnKeyType = .next
         self.passwordTF.isSecureTextEntry = true
         self.passwordTF.clearsOnBeginEditing = true
         self.passwordTF.placeholder = "请输入密码"
-<<<<<<< HEAD
+
+        self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
         self.passwordTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "password"))
         self.passwordTF.returnKeyType = .done
         
-        self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
-=======
-        self.passwordTF.leftView = UIImageView.init(image: UIImage.init(named: "password"))
-        self.passwordTF.returnKeyType = .done
-        
-        self.rememberPasswordBtn.setImage(UIImage.init(named: "checkUnselected"), for: .normal)
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
         let attributedTitle = NSAttributedString.init(string: "记住密码", attributes:
             [
                 NSAttributedStringKey.foregroundColor : UIColor.swDarkTextColor(),
@@ -193,11 +152,7 @@ extension ViewController{
         self.rememberPasswordBtn.tintColor = UIColor.swGrayTextColor()
         self.rememberPasswordBtn.titleEdgeInsets = .init(top: 0, left: 8, bottom: 0, right: -8)
         self.rememberPasswordBtn.addTarget(self, action: #selector(rememberPasswordAction), for: .touchUpInside)
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
         let loginTitle = NSAttributedString.init(string: "登录", attributes:
             [
                 NSAttributedStringKey.foregroundColor : UIColor.white,
@@ -205,15 +160,9 @@ extension ViewController{
             ])
         self.loginBtn.setAttributedTitle(loginTitle, for: .normal)
         self.loginBtn.titleEdgeInsets = .init(top: 0, left: 0, bottom: 4, right: 0)
-<<<<<<< HEAD
         self.loginBtn.setBackgroundImage(UIImage.imageNamed(name: "loginBtn"), for: .normal)
         self.loginBtn.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
 
-=======
-        self.loginBtn.setBackgroundImage(UIImage.init(named: "loginBtn"), for: .normal)
-        self.loginBtn.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
-        
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
         let forgetTitle = NSAttributedString.init(string: "忘记密码?", attributes:
             [
                 NSAttributedStringKey.foregroundColor : UIColor.swGrayTextColor(),
@@ -230,7 +179,6 @@ extension ViewController{
         textField.delegate = self
     }
 }
-<<<<<<< HEAD
 //MARK:keyboard event
 extension ViewController {
     func registerKeyboardNotification() {
@@ -258,7 +206,4 @@ extension ViewController {
         NotificationCenter.default.removeObserver(self, name: Notification.Name.UIKeyboardWillHide, object: nil)
     }
 }
-=======
->>>>>>> b96a8d7aaf7cc582e0d7052ccc35e93729792b0c
-
 
