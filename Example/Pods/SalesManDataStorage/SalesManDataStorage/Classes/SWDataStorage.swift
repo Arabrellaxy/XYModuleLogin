@@ -50,7 +50,7 @@ public class SWDataStorage:NSObject{
         }
         let passwordData = NSKeyedArchiver.archivedData(withRootObject: password!)
         keychainQueryDic.setObject(passwordData, forKey: kSecValueData as! NSCopying)
-        let status:OSStatus = SecItemAdd(keychainQueryDic, nil)
+        let _ = SecItemAdd(keychainQueryDic, nil)
         return true
     }
 //MARK-Private
