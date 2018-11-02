@@ -1,0 +1,2040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A6BB2DC2C6B80055DA93BB4A83842F /* Pods-SalesManLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A077C1C2ECFBA0D010DEDFA4357800 /* Pods-SalesManLogin_Example-dummy.m */; };
+		04F3BBE71B24770E40CC66A993AD85D1 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9783318D1489776037FD1F4A6EE06 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08F9F300F4FC3D9E1A167BC435D5E1AD /* SWDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7F8F52E340CD8AB694277057A7992 /* SWDataStorage.swift */; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE85729C03C00AE32FA556DF56306C6A /* MBProgressHUD-dummy.m */; };
+		09EC74E4AFC1D5951D1F80094D06969A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		0AA5488340EF3758035C2AE2CCCCCD12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		0AB5E76D50FE5D28007526DE8A66C35C /* SalesManAFNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74C3E6A006D83FD506855DB0714529 /* SalesManAFNetworkAPI.swift */; };
+		0ACBBA158F4635FAE16AB5456ABADCA4 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5DD5DA752D632E4A38C7DA56A1FBBA /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		15F6265FCE0955CDB4967F7306407D67 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AE3275FECBDC2BD5011E009FFE2AF4 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B7AD4ACF895D6103D15D03C24E497D5 /* SWAFNParameterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB751A5C64A34B917507279A56F0CD1 /* SWAFNParameterConstant.swift */; };
+		1C05CEDC6360E5C1505929B2378D5026 /* SalesManDataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C139F1EF0A3917871C6E942C1F3CB49F /* SalesManDataStorage.framework */; };
+		27137A77B4C8AEA80EFC8A28A078263E /* SWHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5FD2325E5DA711CDBB13B8544701D6 /* SWHUD.swift */; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7680101B92ED3898A773694CF6038AC8 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A2D72C83E133C89394454858E7DA451 /* SalesManLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3693EC581B43D52DBABD1C27E5439044 /* SalesManLogin-dummy.m */; };
+		2F7B2A8E3372EC47B614746FB09EB618 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F62599247DF54B1A81C049E150741D /* Images.xcassets */; };
+		3345805C0D8E8D0726F7E5981DA61A5F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F8044B2E5327D51D047F2FF33E644F94 /* UIWebView+AFNetworking.m */; };
+		3C9E113B7712442B4BCB59AB7EEC2085 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38CAAAF4E7AE3F931B1F425E500C6A /* AFURLResponseSerialization.m */; };
+		3DDB894364CEC991E61B04E9036D6D54 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E5266658A18A3620E699C9AF6C47C4D5 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E200FD7E112180297D875A78CD8980D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		43802EA5419C7C717C46A1139850EF74 /* SWColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5A8563EB26E3EC73A23B3337F4ABFA /* SWColor.swift */; };
+		4AA21F40697CB42D7D219ACEDE4FBFCF /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E91BE5B35E9B917578D4A8C7A12921 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AA3A9FC9AAD94C226CA975946C9395B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C07B8A7D19A593A802317FD843C01D /* UIRefreshControl+AFNetworking.m */; };
+		4C321BA8844AA4C44D4416CC6948DF2B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD2C48B2CD6D56DBEB9099DD160170 /* AFNetworking-dummy.m */; };
+		4C5DA96F7CAC26975EEEBD7450FF214D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B035995A7222000B3BD0F11FDB93AB9 /* AFURLSessionManager.m */; };
+		4CAF4FDC422AE4B621FA9DED47ADAE7E /* SalesManNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A99BB1EA4F0D05956891F6EEEE94892 /* SalesManNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DA5394D94AA3C2402D06CA85B30E4A3 /* SalesManNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1D38B60B742795A17B21416EBDDE2 /* SalesManNetwork-dummy.m */; };
+		53FB778D3479E27CF55D9BC2BA280D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60B61D3998C15EF67A02B41DA4A3B3A /* Main.storyboard */; };
+		5BFE1CC79F693B6218B419AE50B2070E /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B303E6B9886712AA3A5CF1080A423EB9 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D48A31E92E150E81B49A102C98E4E0 /* QuartzCore.framework */; };
+		63291B04D454B38043E8B735D46D83A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		63BA6FBA10304F4828DE97C0FA63ED9D /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C24F0D6D0DB32F90D9309C20A12A1002 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6478B0091202F9429D2A61E30BEDA571 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D3DC07BE4DEAC4A4CC20E584917C98 /* Security.framework */; };
+		6595C6295B9EBBF40751A376239681FD /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 335028E4507723292254F63542A3CDC3 /* UIProgressView+AFNetworking.m */; };
+		6AB8F78680B3470391219F11D51A1DE7 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BDA5071649BDAB841B69745027D990 /* UIImageView+AFNetworking.m */; };
+		6CB55DD7CD31597EABFD0FBFAEC890DC /* APIReformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC17CCB694CF8CBBB8496BD7AF1EC89 /* APIReformer.swift */; };
+		6CB9CC2565A199F311304556FCD4B190 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E46C22693BAE28D16812043E87B3A4 /* AFNetworking.framework */; };
+		6D3C44C71DE89E9B7F4BA474E22E4748 /* Pods-SalesManLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFA4B221027A10C0D9F8BDD17A12365 /* Pods-SalesManLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7099E4035C06D3116DA2586EFE563C0B /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 873A34EB0E14CB19E316A5796EF20B26 /* AFAutoPurgingImageCache.m */; };
+		78AC6714960C42CC866222B6D956EDF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D30EF2C62D52AAF91F521519258A34F /* CoreGraphics.framework */; };
+		7A21B0809BC23FE26908EB296A9661EE /* SalesManLogin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30D1B427C9344F8B97FE956616A4DCBD /* SalesManLogin.bundle */; };
+		8003F175C73BB05D1B9D7B54740999AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		81ABD96C8FA6FF28CFB2A3A78A6EA560 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED6CDCA99D2870DD0059548C5DFFB88 /* SystemConfiguration.framework */; };
+		83270EF17FD2C3EF55879B3890C7FAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		8338352795128C35662A78484FFE5FCE /* Pods-SalesManLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAE97014B75E72053EFE46443895FFC /* Pods-SalesManLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		847EA2D04C0D35EC64572E187EE4F232 /* SalesManGlobal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A888022E8EE047D02D32FC34B6E4E18B /* SalesManGlobal.framework */; };
+		84BDB9567567F376AC27C5A65E42920C /* Pods-SalesManLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C5C741EC7934638A37FBB464B99604 /* Pods-SalesManLogin_Tests-dummy.m */; };
+		86EA527BA1862E06A8E19E0960C66E7E /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8E0472F9AF7934409259E4483F8DDA /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89637BFFD180A1E05F04DAF0CF4A6540 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4042EB2F700E15B0796475FD5E138D25 /* MobileCoreServices.framework */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEFA239ED590E48CCB1739A8F866E96 /* MBProgressHUD.m */; };
+		8A1EB96C607F92E8AA20676F9A4BC7D9 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BAE61070205DA0E258282D014D2F9A /* UIButton+AFNetworking.m */; };
+		8D9636C74777C684BDF312EE66F8A585 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E49948D657C294B578E880C1F0D925 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DFC777B1993317309F33DC74546CD6F /* SalesManGlobal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4B684FD4E24526A3A1B82E6BB6A4A5 /* SalesManGlobal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		939EF882233B22D0321A70F6DADED11F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B7ADC154A5B94CA7513B7C6C2C010F /* AFHTTPSessionManager.m */; };
+		9788C9F9C0230BC74DEC065A8EA967EC /* SWImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E13CAAC9339B9ADB464286E9453CE /* SWImage.swift */; };
+		9881B0E8310FDB28759E69425373B980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36FCAFF74825F7955FC253C6A7BA35 /* ViewController.swift */; };
+		9898B13B5771AC304E096319E72F8098 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 035F0E2CE2929E9D0333E46E943EB594 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AC1064802A4D107353A87F2B4A963B0 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 68623025E9A2482B3DEEAD5FF7D23740 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C52DBB117D64B79186207F7CA3A2707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */; };
+		9E50A4E2C500D632E689B2C1978977F1 /* Target_Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62273E58AA258D3AB5100AF81C9CA60C /* Target_Login.swift */; };
+		A12A3BC640B690479F345A49C6C48209 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C31101F1C774925E09E01F32904C93BA /* AFNetworkReachabilityManager.m */; };
+		A334C7A14734569A52D599419B1751B9 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD15B1EF8F22137DC9D42ABFC110B2 /* MBProgressHUD.framework */; };
+		A33980652811E243A323B21E36321A14 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD15B1EF8F22137DC9D42ABFC110B2 /* MBProgressHUD.framework */; };
+		A5B069CA1170E03891AC5648DE5CF87D /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF9ED3AC41F7D22AB82F43FBD3E8CDD /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B703D66B62E995CF9965F46AAED61C50 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD868043328B2125E27A5DC14D11958F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AF563760DD8763F32349731CA36F1C /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADD011E9ABBD96D70AAA32A4B9ACBD02 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AD232FFD2B5F95A96DFB632395D5B54B /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B086C8017A694E281B3F30DCCE8FA588 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E742898572F85FBFC58FCBF76CDE057 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40E67D0D4D34F86077831BF464D84E2 /* SalesManNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC5805AAEE36DFDA4DEEADC8DECD6 /* SalesManNetwork.framework */; };
+		B46FE8C00C2CDDE0B4790FFD3DC961A4 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FD37012B60B7EDA45D8A8BBFEEDA22A3 /* AFImageDownloader.m */; };
+		BC5CC357BF656C69EF3955035D3B6E18 /* SalesManDataStorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F47D325D31E05AB3F945D540F63ACA3A /* SalesManDataStorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D30EF2C62D52AAF91F521519258A34F /* CoreGraphics.framework */; };
+		C12BAA822391D670C53FF0C2299654AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F2C0B1893FC98D66EA934473FA655E /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C257BE809D4C4357A8EB7118960E3143 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 748864C6C6E1A865DBD62B8818B8B676 /* UIActivityIndicatorView+AFNetworking.m */; };
+		CA0D37AE5433954573D3E37771CDDBFA /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3FEF4D3F5BB5812E904123D0D9644E /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D093FAD2F013C526C3AD38F4CE71D268 /* SWLeftViewTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CB89136B1D95578F5A56781E1985B /* SWLeftViewTextFiled.swift */; };
+		E50DFF580E1CAD73AE1FD48E53C093F0 /* SalesManLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642E24370AF05F5DC5E29394766F455 /* SalesManLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5CD5C797956697DDCC98A3EAC7E99E3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43D472AB14F189061CA324287D182C /* AFURLRequestSerialization.m */; };
+		E7309ACF68C1B19BDDBDFE68DA39F873 /* SalesManDataStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8292FBAA5A8A3C3E8C086F6A7BB46DC3 /* SalesManDataStorage-dummy.m */; };
+		EA23726556D213DB485BD1791C7164CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C80BFA37433B6B07E91F837AF4F3A /* AFNetworkActivityIndicatorManager.m */; };
+		EC0F1AD65BB632C97E8F116115328FD8 /* SalesManGlobal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AF866B1CA17A2BCC480E79255FB47C /* SalesManGlobal-dummy.m */; };
+		F1199E40BF416FC1ACA2DDCD7B2E23A1 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1031CA03A1C194D5555C67FA08AE51B6 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F26CD9A1DF452688BF3C98BBA9090F92 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EB82AD70911B58A10A83C29BA7BD56A0 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30950E63F3D8D6C07FFB50C5971116E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E153680F96EAD15A01D2C5458EB3FC1 /* AFSecurityPolicy.m */; };
+		F54879EEAE223E90AC9674197E6B1ADE /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFDC7E48F2C61B892B030EC52C6FF88 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD267F7936B8E53E3C7AAB5D4B7C7D6C /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E46C22693BAE28D16812043E87B3A4 /* AFNetworking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55D053F2DAEF206A9F899279931DBBA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4160500DCEA3DA3E93FBA579E88CA0A;
+			remoteInfo = AFNetworking;
+		};
+		5D1A41030F94668B9FC4BB08FCA5A3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4160500DCEA3DA3E93FBA579E88CA0A;
+			remoteInfo = AFNetworking;
+		};
+		637822F9B1B7A2654048EDF7C0AF0034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E94B6086B02AF4437A6DF94E384FF0;
+			remoteInfo = SalesManNetwork;
+		};
+		70A8AF0476BA640A14B0956EBCACB1DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+		73E7D31580B3638CB5ECCB9DEAEB055B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01C4A2CF6A9FC1BB916E047CF247E245;
+			remoteInfo = "SalesManLogin-SalesManLogin";
+		};
+		8554F96AEB937CA90FD51FC1D684ABCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1AB0650437440B7AD69628483EF154B;
+			remoteInfo = SalesManDataStorage;
+		};
+		8B55A4733A55F864A59F053FE86EFEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E94B6086B02AF4437A6DF94E384FF0;
+			remoteInfo = SalesManNetwork;
+		};
+		A1481AEF9F9E1198E9AD5DDE5F988DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E0497EF8998E1C832D882AAF09E27B;
+			remoteInfo = SalesManGlobal;
+		};
+		A28A9992BD44D77EF3275A0521F39879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+		A98CEDF98AB163CD73F6CDB22BADB33D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB09427197542CDD525CDBBB6263FCF;
+			remoteInfo = SalesManLogin;
+		};
+		B152994DC91B6287D7D33CBCE98CDF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1AB0650437440B7AD69628483EF154B;
+			remoteInfo = SalesManDataStorage;
+		};
+		BDCAE56A2AB245E36621F23920D36DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E0497EF8998E1C832D882AAF09E27B;
+			remoteInfo = SalesManGlobal;
+		};
+		CD405FB98A312EE1D561A82EB3A15E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+		E3E5FEC33C1367A084E186A220CBDA9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4160500DCEA3DA3E93FBA579E88CA0A;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BDA5071649BDAB841B69745027D990 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		035F0E2CE2929E9D0333E46E943EB594 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		075056A17DBC4FBAAA648A5E725837DB /* SalesManLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SalesManLogin.framework; path = SalesManLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E91BE5B35E9B917578D4A8C7A12921 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		0AB751A5C64A34B917507279A56F0CD1 /* SWAFNParameterConstant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWAFNParameterConstant.swift; path = SalesManNetwork/Classes/SWAFNParameterConstant.swift; sourceTree = "<group>"; };
+		0BB45CC4B79D390FDCEA27F6C950FF0E /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECC05C08F27C7D2493F50A82372E9E1 /* Pods-SalesManLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1031CA03A1C194D5555C67FA08AE51B6 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		128CB89136B1D95578F5A56781E1985B /* SWLeftViewTextFiled.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWLeftViewTextFiled.swift; path = SalesManLogin/Classes/SWLeftViewTextFiled.swift; sourceTree = "<group>"; };
+		16C7F8F52E340CD8AB694277057A7992 /* SWDataStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWDataStorage.swift; path = SalesManDataStorage/Classes/SWDataStorage.swift; sourceTree = "<group>"; };
+		18FA45465569F2A76FAA9C479477DF97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A322D970CFB18CF2C78450EE7AB8C64 /* SalesManNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManNetwork.modulemap; sourceTree = "<group>"; };
+		21816F35FF7CFB83C1118106EE93EC8D /* Pods_SalesManLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SalesManLogin_Tests.framework; path = "Pods-SalesManLogin_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		250CB25D5A249DE3C66E68FA042961AA /* Pods-SalesManLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SalesManLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		27BBD38CEF1243614D965313F9CFE2A1 /* Pods-SalesManLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SalesManLogin_Tests.modulemap"; sourceTree = "<group>"; };
+		2A99BB1EA4F0D05956891F6EEEE94892 /* SalesManNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-umbrella.h"; sourceTree = "<group>"; };
+		2D30EF2C62D52AAF91F521519258A34F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2E742898572F85FBFC58FCBF76CDE057 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		2ED6CDCA99D2870DD0059548C5DFFB88 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		2EF5271C3638863F1A46997232B8CF2F /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		2FDBA73F582DB4DD94CAF3ECBCA273D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C07B8A7D19A593A802317FD843C01D /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		30C57EA5B9D30B12B52FA8BCE84B718E /* SalesManDataStorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManDataStorage-prefix.pch"; sourceTree = "<group>"; };
+		30D1B427C9344F8B97FE956616A4DCBD /* SalesManLogin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SalesManLogin.bundle; path = "SalesManLogin-SalesManLogin.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327E28304CD4CA5B7AC1AB3F5CA04578 /* Pods-SalesManLogin_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManLogin_Tests-resources.sh"; sourceTree = "<group>"; };
+		32D48A31E92E150E81B49A102C98E4E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		335028E4507723292254F63542A3CDC3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3693EC581B43D52DBABD1C27E5439044 /* SalesManLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManLogin-dummy.m"; sourceTree = "<group>"; };
+		37F2C0B1893FC98D66EA934473FA655E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		396DA564CFA7046896411019C74C2B5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8E0472F9AF7934409259E4483F8DDA /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		3C4B684FD4E24526A3A1B82E6BB6A4A5 /* SalesManGlobal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManGlobal-umbrella.h"; sourceTree = "<group>"; };
+		3CBEFCCA218490CA2D400E8730C27225 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D74C3E6A006D83FD506855DB0714529 /* SalesManAFNetworkAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesManAFNetworkAPI.swift; path = SalesManNetwork/Classes/SalesManAFNetworkAPI.swift; sourceTree = "<group>"; };
+		3E153680F96EAD15A01D2C5458EB3FC1 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		4042EB2F700E15B0796475FD5E138D25 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		40689EF8CDDFD38008AA1B243B3768AE /* Pods-SalesManLogin_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManLogin_Example-resources.sh"; sourceTree = "<group>"; };
+		438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManLogin.xcconfig; sourceTree = "<group>"; };
+		43E49948D657C294B578E880C1F0D925 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		453A148E415C98AE494C1A1F4E23F681 /* SalesManLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SalesManLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4642E24370AF05F5DC5E29394766F455 /* SalesManLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManLogin-umbrella.h"; sourceTree = "<group>"; };
+		497ADE3A1ADEDFCAFBB5844175C14ABD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AAE97014B75E72053EFE46443895FFC /* Pods-SalesManLogin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SalesManLogin_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4B035995A7222000B3BD0F11FDB93AB9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		4C96F708BC17F8E539FACB30A60BC219 /* Pods-SalesManLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6DC5805AAEE36DFDA4DEEADC8DECD6 /* SalesManNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesManNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3DDE6A48C6CC3625E9CE66B3A9D4DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4E3FEF4D3F5BB5812E904123D0D9644E /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		50AF866B1CA17A2BCC480E79255FB47C /* SalesManGlobal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManGlobal-dummy.m"; sourceTree = "<group>"; };
+		5328B873BD3C12FDDCEE42B345C0C279 /* SalesManDataStorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManDataStorage.xcconfig; sourceTree = "<group>"; };
+		5CF582F5DD7BC63E747A509468253171 /* Pods-SalesManLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		62273E58AA258D3AB5100AF81C9CA60C /* Target_Login.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Target_Login.swift; path = SalesManLogin/Classes/Target_Login.swift; sourceTree = "<group>"; };
+		63B9783318D1489776037FD1F4A6EE06 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		64AF563760DD8763F32349731CA36F1C /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		68623025E9A2482B3DEEAD5FF7D23740 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		6A95A7B2DA5EA2895E8F2C7826B18342 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AC17CCB694CF8CBBB8496BD7AF1EC89 /* APIReformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIReformer.swift; path = SalesManLogin/Classes/APIReformer.swift; sourceTree = "<group>"; };
+		71A077C1C2ECFBA0D010DEDFA4357800 /* Pods-SalesManLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SalesManLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		748864C6C6E1A865DBD62B8818B8B676 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		752D4939A3B7F6FF502B20755BF0818F /* SalesManGlobal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SalesManGlobal.framework; path = SalesManGlobal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AE3275FECBDC2BD5011E009FFE2AF4 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		7680101B92ED3898A773694CF6038AC8 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		76D3DC07BE4DEAC4A4CC20E584917C98 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		77E46C22693BAE28D16812043E87B3A4 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79924EF4C86E38894B7218910F427DC5 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		79CB2F4DEA452F8A4F8C6E00AFEB89AB /* SalesManGlobal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManGlobal.modulemap; sourceTree = "<group>"; };
+		7AFDC7E48F2C61B892B030EC52C6FF88 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		7B660ECA770585AED96E33E33D5527C7 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		7CFA4B221027A10C0D9F8BDD17A12365 /* Pods-SalesManLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SalesManLogin_Example-umbrella.h"; sourceTree = "<group>"; };
+		7E5DD5DA752D632E4A38C7DA56A1FBBA /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		7F9C7148EC78E21E19FA30329CDEC41B /* SalesManNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SalesManNetwork.framework; path = SalesManNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8292FBAA5A8A3C3E8C086F6A7BB46DC3 /* SalesManDataStorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManDataStorage-dummy.m"; sourceTree = "<group>"; };
+		873A34EB0E14CB19E316A5796EF20B26 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		8B36FCAFF74825F7955FC253C6A7BA35 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SalesManLogin/Classes/ViewController.swift; sourceTree = "<group>"; };
+		8FEC7BA9FB5EA4C7EBB84E670C2C97B3 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		9359E45B0FC748799E2D94FFE2F4B422 /* Pods-SalesManLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C38CAAAF4E7AE3F931B1F425E500C6A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9CF17F503FB541997A7C960A5C160B09 /* Pods_SalesManLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SalesManLogin_Example.framework; path = "Pods-SalesManLogin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDD2C48B2CD6D56DBEB9099DD160170 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		A0F62599247DF54B1A81C049E150741D /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SalesManLogin/Assets/Images.xcassets; sourceTree = "<group>"; };
+		A3BAE61070205DA0E258282D014D2F9A /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		A4BB5D4C71906586F696C59704EB98C1 /* SalesManNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManNetwork-prefix.pch"; sourceTree = "<group>"; };
+		A5C5C741EC7934638A37FBB464B99604 /* Pods-SalesManLogin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SalesManLogin_Tests-dummy.m"; sourceTree = "<group>"; };
+		A888022E8EE047D02D32FC34B6E4E18B /* SalesManGlobal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesManGlobal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD1D38B60B742795A17B21416EBDDE2 /* SalesManNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SalesManNetwork-dummy.m"; sourceTree = "<group>"; };
+		AD232FFD2B5F95A96DFB632395D5B54B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		AE85729C03C00AE32FA556DF56306C6A /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		AFD4B71A2011BC99EDDFBE53C43F1A7B /* Pods-SalesManLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesManLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B1C926F0FE69E6C33143716F0285C735 /* Pods-SalesManLogin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SalesManLogin_Example.modulemap"; sourceTree = "<group>"; };
+		B303E6B9886712AA3A5CF1080A423EB9 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		B703D66B62E995CF9965F46AAED61C50 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BA0DA11504D3CA01B298023CFBFAAD33 /* SalesManGlobal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManGlobal-prefix.pch"; sourceTree = "<group>"; };
+		C139F1EF0A3917871C6E942C1F3CB49F /* SalesManDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SalesManDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24F0D6D0DB32F90D9309C20A12A1002 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		C31101F1C774925E09E01F32904C93BA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C3F9C129C749ACC5076681263DCFE3D6 /* SalesManDataStorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManDataStorage.modulemap; sourceTree = "<group>"; };
+		CC32ED5DB01438B500F304F1F54D712F /* SalesManLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SalesManLogin.modulemap; sourceTree = "<group>"; };
+		CC6DA121730E2286CA2B8223B49F763C /* SalesManGlobal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManGlobal.xcconfig; sourceTree = "<group>"; };
+		CD7FB909FAA740622647963F776426FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CD85FB9807F65FB11C664F6E41473579 /* SalesManNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SalesManNetwork.xcconfig; sourceTree = "<group>"; };
+		CE045DF68BABD425D134DBE147FA82CC /* Pods-SalesManLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SalesManLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE9C80BFA37433B6B07E91F837AF4F3A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		CF43D472AB14F189061CA324287D182C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CFE87314806D9C912375175BF08E8B7A /* ResourceBundle-SalesManLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SalesManLogin-Info.plist"; sourceTree = "<group>"; };
+		CFEFA239ED590E48CCB1739A8F866E96 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D4AD15B1EF8F22137DC9D42ABFC110B2 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7DF687211D74E2BF993DF3623EE871 /* Pods-SalesManLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SalesManLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD5E13CAAC9339B9ADB464286E9453CE /* SWImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWImage.swift; path = SalesManLogin/Classes/SWImage.swift; sourceTree = "<group>"; };
+		DD84A7822539BFE0DF144FF1F0100953 /* Pods-SalesManLogin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SalesManLogin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF36BF364849E495B32D214B22138F71 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		E336FC524E04643CB477AD893C16B833 /* SalesManDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SalesManDataStorage.framework; path = SalesManDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B7ADC154A5B94CA7513B7C6C2C010F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		E5266658A18A3620E699C9AF6C47C4D5 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		E60B61D3998C15EF67A02B41DA4A3B3A /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SalesManLogin/Assets/Main.storyboard; sourceTree = "<group>"; };
+		E64FF1BD0893CA018EE684D0C672C15B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA64D967DA274216F5C1D27F3BCE0EA1 /* SalesManLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManLogin-prefix.pch"; sourceTree = "<group>"; };
+		EB82AD70911B58A10A83C29BA7BD56A0 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		ED5A8563EB26E3EC73A23B3337F4ABFA /* SWColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWColor.swift; path = SalesManLogin/Classes/SWColor.swift; sourceTree = "<group>"; };
+		EE5FD2325E5DA711CDBB13B8544701D6 /* SWHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWHUD.swift; path = SalesManGlobal/Classes/SWHUD.swift; sourceTree = "<group>"; };
+		F3C5DFE2D39FB9AB1DBC2986083D3776 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47D325D31E05AB3F945D540F63ACA3A /* SalesManDataStorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SalesManDataStorage-umbrella.h"; sourceTree = "<group>"; };
+		F50DCE189900FEE7898FBC0D71706432 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		F5F9D0298ED8AAA4131F3C9EFD633EB3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8044B2E5327D51D047F2FF33E644F94 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		F9AE99E56435154F6F9819E11F1F0B2F /* Pods-SalesManLogin_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesManLogin_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FBF9ED3AC41F7D22AB82F43FBD3E8CDD /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		FD37012B60B7EDA45D8A8BBFEEDA22A3 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A9CC74DB10F50AE5620036CE69292C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C52DBB117D64B79186207F7CA3A2707 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5E25677132F886D08985A60BF0F055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8003F175C73BB05D1B9D7B54740999AD /* Foundation.framework in Frameworks */,
+				A334C7A14734569A52D599419B1751B9 /* MBProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42505DFDBD19A71C4BC7F4E1940EE14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA5488340EF3758035C2AE2CCCCCD12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE9B3A8689C804A43D970F1265675A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AC6714960C42CC866222B6D956EDF6 /* CoreGraphics.framework in Frameworks */,
+				09EC74E4AFC1D5951D1F80094D06969A /* Foundation.framework in Frameworks */,
+				89637BFFD180A1E05F04DAF0CF4A6540 /* MobileCoreServices.framework in Frameworks */,
+				6478B0091202F9429D2A61E30BEDA571 /* Security.framework in Frameworks */,
+				81ABD96C8FA6FF28CFB2A3A78A6EA560 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CC050B6CA02215F17FC4C43ECF17BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6B9D9318D455585A17E681C3E9E451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD267F7936B8E53E3C7AAB5D4B7C7D6C /* AFNetworking.framework in Frameworks */,
+				3E200FD7E112180297D875A78CD8980D /* Foundation.framework in Frameworks */,
+				A33980652811E243A323B21E36321A14 /* MBProgressHUD.framework in Frameworks */,
+				1C05CEDC6360E5C1505929B2378D5026 /* SalesManDataStorage.framework in Frameworks */,
+				847EA2D04C0D35EC64572E187EE4F232 /* SalesManGlobal.framework in Frameworks */,
+				B40E67D0D4D34F86077831BF464D84E2 /* SalesManNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57774E30FD88AE26F9037E1360E947B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */,
+				14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */,
+				5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4D25E5280E9C64F1C85F1147951493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63291B04D454B38043E8B735D46D83A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ED933A3940A27C0FB48CAD6DE61A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB9CC2565A199F311304556FCD4B190 /* AFNetworking.framework in Frameworks */,
+				83270EF17FD2C3EF55879B3890C7FAFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F0536CC33B07C80ACBD2D340322263 /* Pods-SalesManLogin_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18FA45465569F2A76FAA9C479477DF97 /* Info.plist */,
+				27BBD38CEF1243614D965313F9CFE2A1 /* Pods-SalesManLogin_Tests.modulemap */,
+				DD84A7822539BFE0DF144FF1F0100953 /* Pods-SalesManLogin_Tests-acknowledgements.markdown */,
+				DC7DF687211D74E2BF993DF3623EE871 /* Pods-SalesManLogin_Tests-acknowledgements.plist */,
+				A5C5C741EC7934638A37FBB464B99604 /* Pods-SalesManLogin_Tests-dummy.m */,
+				F9AE99E56435154F6F9819E11F1F0B2F /* Pods-SalesManLogin_Tests-frameworks.sh */,
+				327E28304CD4CA5B7AC1AB3F5CA04578 /* Pods-SalesManLogin_Tests-resources.sh */,
+				4AAE97014B75E72053EFE46443895FFC /* Pods-SalesManLogin_Tests-umbrella.h */,
+				5CF582F5DD7BC63E747A509468253171 /* Pods-SalesManLogin_Tests.debug.xcconfig */,
+				AFD4B71A2011BC99EDDFBE53C43F1A7B /* Pods-SalesManLogin_Tests.release.xcconfig */,
+			);
+			name = "Pods-SalesManLogin_Tests";
+			path = "Target Support Files/Pods-SalesManLogin_Tests";
+			sourceTree = "<group>";
+		};
+		090D11FDC7E9186CFEE3C895A6BBDCB4 /* SalesManGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FD2325E5DA711CDBB13B8544701D6 /* SWHUD.swift */,
+				E6EB6D45290181E18B25604A7B3676D2 /* Support Files */,
+			);
+			name = SalesManGlobal;
+			path = SalesManGlobal;
+			sourceTree = "<group>";
+		};
+		1AFB102329F53C100331F0646FAA5DAE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				07E91BE5B35E9B917578D4A8C7A12921 /* AFAutoPurgingImageCache.h */,
+				873A34EB0E14CB19E316A5796EF20B26 /* AFAutoPurgingImageCache.m */,
+				7AFDC7E48F2C61B892B030EC52C6FF88 /* AFImageDownloader.h */,
+				FD37012B60B7EDA45D8A8BBFEEDA22A3 /* AFImageDownloader.m */,
+				68623025E9A2482B3DEEAD5FF7D23740 /* AFNetworkActivityIndicatorManager.h */,
+				CE9C80BFA37433B6B07E91F837AF4F3A /* AFNetworkActivityIndicatorManager.m */,
+				64AF563760DD8763F32349731CA36F1C /* UIActivityIndicatorView+AFNetworking.h */,
+				748864C6C6E1A865DBD62B8818B8B676 /* UIActivityIndicatorView+AFNetworking.m */,
+				7E5DD5DA752D632E4A38C7DA56A1FBBA /* UIButton+AFNetworking.h */,
+				A3BAE61070205DA0E258282D014D2F9A /* UIButton+AFNetworking.m */,
+				1031CA03A1C194D5555C67FA08AE51B6 /* UIImage+AFNetworking.h */,
+				FBF9ED3AC41F7D22AB82F43FBD3E8CDD /* UIImageView+AFNetworking.h */,
+				01BDA5071649BDAB841B69745027D990 /* UIImageView+AFNetworking.m */,
+				AD232FFD2B5F95A96DFB632395D5B54B /* UIKit+AFNetworking.h */,
+				C24F0D6D0DB32F90D9309C20A12A1002 /* UIProgressView+AFNetworking.h */,
+				335028E4507723292254F63542A3CDC3 /* UIProgressView+AFNetworking.m */,
+				3B8E0472F9AF7934409259E4483F8DDA /* UIRefreshControl+AFNetworking.h */,
+				30C07B8A7D19A593A802317FD843C01D /* UIRefreshControl+AFNetworking.m */,
+				75AE3275FECBDC2BD5011E009FFE2AF4 /* UIWebView+AFNetworking.h */,
+				F8044B2E5327D51D047F2FF33E644F94 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		215938C7000B8FAE02DB8CA5CAB4D29B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				63B9783318D1489776037FD1F4A6EE06 /* AFSecurityPolicy.h */,
+				3E153680F96EAD15A01D2C5458EB3FC1 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		21B71C1C2AEDF03239C7183A5C292DF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5DFE2D39FB9AB1DBC2986083D3776 /* Info.plist */,
+				DF36BF364849E495B32D214B22138F71 /* MBProgressHUD.modulemap */,
+				F50DCE189900FEE7898FBC0D71706432 /* MBProgressHUD.xcconfig */,
+				AE85729C03C00AE32FA556DF56306C6A /* MBProgressHUD-dummy.m */,
+				7B660ECA770585AED96E33E33D5527C7 /* MBProgressHUD-prefix.pch */,
+				7680101B92ED3898A773694CF6038AC8 /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		349AFA0121E087DBD83C9251D343F6DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBA73F582DB4DD94CAF3ECBCA273D2 /* Info.plist */,
+				C3F9C129C749ACC5076681263DCFE3D6 /* SalesManDataStorage.modulemap */,
+				5328B873BD3C12FDDCEE42B345C0C279 /* SalesManDataStorage.xcconfig */,
+				8292FBAA5A8A3C3E8C086F6A7BB46DC3 /* SalesManDataStorage-dummy.m */,
+				30C57EA5B9D30B12B52FA8BCE84B718E /* SalesManDataStorage-prefix.pch */,
+				F47D325D31E05AB3F945D540F63ACA3A /* SalesManDataStorage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SalesManDataStorage";
+			sourceTree = "<group>";
+		};
+		3F096E5CE79F65F0DE928AB8A4A90FB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0F62599247DF54B1A81C049E150741D /* Images.xcassets */,
+				E60B61D3998C15EF67A02B41DA4A3B3A /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B2C497E67A48D31FDB6D2536F08B0EE /* SalesManNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				3D74C3E6A006D83FD506855DB0714529 /* SalesManAFNetworkAPI.swift */,
+				0AB751A5C64A34B917507279A56F0CD1 /* SWAFNParameterConstant.swift */,
+				AA1FD691E8A8385D03F991DEE65524C6 /* Support Files */,
+			);
+			name = SalesManNetwork;
+			path = SalesManNetwork;
+			sourceTree = "<group>";
+		};
+		4C3D7F0BB1EEC48676ADA83E39EBDAF4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				749FE0FC9503F693C839B13B1C2D02E0 /* SalesManLogin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		612479C21512709A3E0E4392AE85BB94 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CD7FB909FAA740622647963F776426FC /* LICENSE */,
+				4E3DDE6A48C6CC3625E9CE66B3A9D4DF /* README.md */,
+				453A148E415C98AE494C1A1F4E23F681 /* SalesManLogin.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		749FE0FC9503F693C839B13B1C2D02E0 /* SalesManLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6AC17CCB694CF8CBBB8496BD7AF1EC89 /* APIReformer.swift */,
+				ED5A8563EB26E3EC73A23B3337F4ABFA /* SWColor.swift */,
+				DD5E13CAAC9339B9ADB464286E9453CE /* SWImage.swift */,
+				128CB89136B1D95578F5A56781E1985B /* SWLeftViewTextFiled.swift */,
+				62273E58AA258D3AB5100AF81C9CA60C /* Target_Login.swift */,
+				8B36FCAFF74825F7955FC253C6A7BA35 /* ViewController.swift */,
+				612479C21512709A3E0E4392AE85BB94 /* Pod */,
+				3F096E5CE79F65F0DE928AB8A4A90FB2 /* Resources */,
+				CE0F8FCFB206F291F7A2B20B5013B852 /* Support Files */,
+			);
+			name = SalesManLogin;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7B25B3AD72B3530043E139A3A82509EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5271C3638863F1A46997232B8CF2F /* AFNetworking.modulemap */,
+				79924EF4C86E38894B7218910F427DC5 /* AFNetworking.xcconfig */,
+				9FDD2C48B2CD6D56DBEB9099DD160170 /* AFNetworking-dummy.m */,
+				8FEC7BA9FB5EA4C7EBB84E670C2C97B3 /* AFNetworking-prefix.pch */,
+				B303E6B9886712AA3A5CF1080A423EB9 /* AFNetworking-umbrella.h */,
+				497ADE3A1ADEDFCAFBB5844175C14ABD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4C3D7F0BB1EEC48676ADA83E39EBDAF4 /* Development Pods */,
+				DEE71D17D4F7925AB49253852450EED8 /* Frameworks */,
+				F8CBC707AEB04CFC2A786FE6A8A1D01C /* Pods */,
+				C1E17C0A05F65BFEFC275672BD334036 /* Products */,
+				8DAF3A1176A14EAC313869EAAE6315A7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8DAF3A1176A14EAC313869EAAE6315A7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABBB39E25AB50778D76C813B15E0E6 /* Pods-SalesManLogin_Example */,
+				00F0536CC33B07C80ACBD2D340322263 /* Pods-SalesManLogin_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3EEFD71B4455EDC60B6851D0BE9E66F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D30EF2C62D52AAF91F521519258A34F /* CoreGraphics.framework */,
+				368A0CA865BAAC31EE63C32E72E50511 /* Foundation.framework */,
+				4042EB2F700E15B0796475FD5E138D25 /* MobileCoreServices.framework */,
+				32D48A31E92E150E81B49A102C98E4E0 /* QuartzCore.framework */,
+				76D3DC07BE4DEAC4A4CC20E584917C98 /* Security.framework */,
+				2ED6CDCA99D2870DD0059548C5DFFB88 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AA1FD691E8A8385D03F991DEE65524C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CBEFCCA218490CA2D400E8730C27225 /* Info.plist */,
+				1A322D970CFB18CF2C78450EE7AB8C64 /* SalesManNetwork.modulemap */,
+				CD85FB9807F65FB11C664F6E41473579 /* SalesManNetwork.xcconfig */,
+				AAD1D38B60B742795A17B21416EBDDE2 /* SalesManNetwork-dummy.m */,
+				A4BB5D4C71906586F696C59704EB98C1 /* SalesManNetwork-prefix.pch */,
+				2A99BB1EA4F0D05956891F6EEEE94892 /* SalesManNetwork-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SalesManNetwork";
+			sourceTree = "<group>";
+		};
+		B4F758A6261BB1DA2219C07951557D4A /* SalesManDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				16C7F8F52E340CD8AB694277057A7992 /* SWDataStorage.swift */,
+				349AFA0121E087DBD83C9251D343F6DA /* Support Files */,
+			);
+			name = SalesManDataStorage;
+			path = SalesManDataStorage;
+			sourceTree = "<group>";
+		};
+		C1E17C0A05F65BFEFC275672BD334036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5F9D0298ED8AAA4131F3C9EFD633EB3 /* AFNetworking.framework */,
+				0BB45CC4B79D390FDCEA27F6C950FF0E /* MBProgressHUD.framework */,
+				9CF17F503FB541997A7C960A5C160B09 /* Pods_SalesManLogin_Example.framework */,
+				21816F35FF7CFB83C1118106EE93EC8D /* Pods_SalesManLogin_Tests.framework */,
+				E336FC524E04643CB477AD893C16B833 /* SalesManDataStorage.framework */,
+				752D4939A3B7F6FF502B20755BF0818F /* SalesManGlobal.framework */,
+				30D1B427C9344F8B97FE956616A4DCBD /* SalesManLogin.bundle */,
+				075056A17DBC4FBAAA648A5E725837DB /* SalesManLogin.framework */,
+				7F9C7148EC78E21E19FA30329CDEC41B /* SalesManNetwork.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0F8FCFB206F291F7A2B20B5013B852 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A95A7B2DA5EA2895E8F2C7826B18342 /* Info.plist */,
+				CFE87314806D9C912375175BF08E8B7A /* ResourceBundle-SalesManLogin-Info.plist */,
+				CC32ED5DB01438B500F304F1F54D712F /* SalesManLogin.modulemap */,
+				438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */,
+				3693EC581B43D52DBABD1C27E5439044 /* SalesManLogin-dummy.m */,
+				EA64D967DA274216F5C1D27F3BCE0EA1 /* SalesManLogin-prefix.pch */,
+				4642E24370AF05F5DC5E29394766F455 /* SalesManLogin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SalesManLogin";
+			sourceTree = "<group>";
+		};
+		D1ABBB39E25AB50778D76C813B15E0E6 /* Pods-SalesManLogin_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E64FF1BD0893CA018EE684D0C672C15B /* Info.plist */,
+				B1C926F0FE69E6C33143716F0285C735 /* Pods-SalesManLogin_Example.modulemap */,
+				CE045DF68BABD425D134DBE147FA82CC /* Pods-SalesManLogin_Example-acknowledgements.markdown */,
+				250CB25D5A249DE3C66E68FA042961AA /* Pods-SalesManLogin_Example-acknowledgements.plist */,
+				71A077C1C2ECFBA0D010DEDFA4357800 /* Pods-SalesManLogin_Example-dummy.m */,
+				0ECC05C08F27C7D2493F50A82372E9E1 /* Pods-SalesManLogin_Example-frameworks.sh */,
+				40689EF8CDDFD38008AA1B243B3768AE /* Pods-SalesManLogin_Example-resources.sh */,
+				7CFA4B221027A10C0D9F8BDD17A12365 /* Pods-SalesManLogin_Example-umbrella.h */,
+				4C96F708BC17F8E539FACB30A60BC219 /* Pods-SalesManLogin_Example.debug.xcconfig */,
+				9359E45B0FC748799E2D94FFE2F4B422 /* Pods-SalesManLogin_Example.release.xcconfig */,
+			);
+			name = "Pods-SalesManLogin_Example";
+			path = "Target Support Files/Pods-SalesManLogin_Example";
+			sourceTree = "<group>";
+		};
+		DEE71D17D4F7925AB49253852450EED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77E46C22693BAE28D16812043E87B3A4 /* AFNetworking.framework */,
+				D4AD15B1EF8F22137DC9D42ABFC110B2 /* MBProgressHUD.framework */,
+				C139F1EF0A3917871C6E942C1F3CB49F /* SalesManDataStorage.framework */,
+				A888022E8EE047D02D32FC34B6E4E18B /* SalesManGlobal.framework */,
+				4D6DC5805AAEE36DFDA4DEEADC8DECD6 /* SalesManNetwork.framework */,
+				A3EEFD71B4455EDC60B6851D0BE9E66F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41A9C8B990FD8AC647FB8AE46BD5F4D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E5266658A18A3620E699C9AF6C47C4D5 /* AFNetworking.h */,
+				E8A337DAEABF276D4FBAF1F9DDC95299 /* NSURLSession */,
+				F9E7F50090B97BBA83A812B6CA976FCA /* Reachability */,
+				215938C7000B8FAE02DB8CA5CAB4D29B /* Security */,
+				FAEE2B18AB5B9309F3C6D02687A12481 /* Serialization */,
+				7B25B3AD72B3530043E139A3A82509EE /* Support Files */,
+				1AFB102329F53C100331F0646FAA5DAE /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		E6EB6D45290181E18B25604A7B3676D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				396DA564CFA7046896411019C74C2B5C /* Info.plist */,
+				79CB2F4DEA452F8A4F8C6E00AFEB89AB /* SalesManGlobal.modulemap */,
+				CC6DA121730E2286CA2B8223B49F763C /* SalesManGlobal.xcconfig */,
+				50AF866B1CA17A2BCC480E79255FB47C /* SalesManGlobal-dummy.m */,
+				BA0DA11504D3CA01B298023CFBFAAD33 /* SalesManGlobal-prefix.pch */,
+				3C4B684FD4E24526A3A1B82E6BB6A4A5 /* SalesManGlobal-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SalesManGlobal";
+			sourceTree = "<group>";
+		};
+		E8A337DAEABF276D4FBAF1F9DDC95299 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				035F0E2CE2929E9D0333E46E943EB594 /* AFCompatibilityMacros.h */,
+				2E742898572F85FBFC58FCBF76CDE057 /* AFHTTPSessionManager.h */,
+				E4B7ADC154A5B94CA7513B7C6C2C010F /* AFHTTPSessionManager.m */,
+				37F2C0B1893FC98D66EA934473FA655E /* AFURLSessionManager.h */,
+				4B035995A7222000B3BD0F11FDB93AB9 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F8CBC707AEB04CFC2A786FE6A8A1D01C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E41A9C8B990FD8AC647FB8AE46BD5F4D /* AFNetworking */,
+				FE84598B3EADE992C6FF89CF8546D8BF /* MBProgressHUD */,
+				B4F758A6261BB1DA2219C07951557D4A /* SalesManDataStorage */,
+				090D11FDC7E9186CFEE3C895A6BBDCB4 /* SalesManGlobal */,
+				4B2C497E67A48D31FDB6D2536F08B0EE /* SalesManNetwork */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9E7F50090B97BBA83A812B6CA976FCA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				43E49948D657C294B578E880C1F0D925 /* AFNetworkReachabilityManager.h */,
+				C31101F1C774925E09E01F32904C93BA /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		FAEE2B18AB5B9309F3C6D02687A12481 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AD70911B58A10A83C29BA7BD56A0 /* AFURLRequestSerialization.h */,
+				CF43D472AB14F189061CA324287D182C /* AFURLRequestSerialization.m */,
+				4E3FEF4D3F5BB5812E904123D0D9644E /* AFURLResponseSerialization.h */,
+				9C38CAAAF4E7AE3F931B1F425E500C6A /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		FE84598B3EADE992C6FF89CF8546D8BF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B703D66B62E995CF9965F46AAED61C50 /* MBProgressHUD.h */,
+				CFEFA239ED590E48CCB1739A8F866E96 /* MBProgressHUD.m */,
+				21B71C1C2AEDF03239C7183A5C292DF5 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E94E19968865D660116A740920B2CEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5CC357BF656C69EF3955035D3B6E18 /* SalesManDataStorage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197B7877D5D346F405BDD059EF96DBDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */,
+				A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1CF90EFEE9A1C0F61EA483A618D613 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8338352795128C35662A78484FFE5FCE /* Pods-SalesManLogin_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437E0B8BDA100834FD20877E5FCDC59D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA21F40697CB42D7D219ACEDE4FBFCF /* AFAutoPurgingImageCache.h in Headers */,
+				9898B13B5771AC304E096319E72F8098 /* AFCompatibilityMacros.h in Headers */,
+				B086C8017A694E281B3F30DCCE8FA588 /* AFHTTPSessionManager.h in Headers */,
+				F54879EEAE223E90AC9674197E6B1ADE /* AFImageDownloader.h in Headers */,
+				9AC1064802A4D107353A87F2B4A963B0 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				5BFE1CC79F693B6218B419AE50B2070E /* AFNetworking-umbrella.h in Headers */,
+				3DDB894364CEC991E61B04E9036D6D54 /* AFNetworking.h in Headers */,
+				8D9636C74777C684BDF312EE66F8A585 /* AFNetworkReachabilityManager.h in Headers */,
+				04F3BBE71B24770E40CC66A993AD85D1 /* AFSecurityPolicy.h in Headers */,
+				F26CD9A1DF452688BF3C98BBA9090F92 /* AFURLRequestSerialization.h in Headers */,
+				CA0D37AE5433954573D3E37771CDDBFA /* AFURLResponseSerialization.h in Headers */,
+				C12BAA822391D670C53FF0C2299654AD /* AFURLSessionManager.h in Headers */,
+				AD868043328B2125E27A5DC14D11958F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				0ACBBA158F4635FAE16AB5456ABADCA4 /* UIButton+AFNetworking.h in Headers */,
+				F1199E40BF416FC1ACA2DDCD7B2E23A1 /* UIImage+AFNetworking.h in Headers */,
+				A5B069CA1170E03891AC5648DE5CF87D /* UIImageView+AFNetworking.h in Headers */,
+				ADD011E9ABBD96D70AAA32A4B9ACBD02 /* UIKit+AFNetworking.h in Headers */,
+				63BA6FBA10304F4828DE97C0FA63ED9D /* UIProgressView+AFNetworking.h in Headers */,
+				86EA527BA1862E06A8E19E0960C66E7E /* UIRefreshControl+AFNetworking.h in Headers */,
+				15F6265FCE0955CDB4967F7306407D67 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6F9D5AA7F3E3D1BC6A31674200C39E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFC777B1993317309F33DC74546CD6F /* SalesManGlobal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6393A1D3542CC5C191414037DF102275 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3C44C71DE89E9B7F4BA474E22E4748 /* Pods-SalesManLogin_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F937D17E6100A90EA9A9AB9133A5C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50DFF580E1CAD73AE1FD48E53C093F0 /* SalesManLogin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938C1B1B37E32521D3EA3A5B4FF94542 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAF4FDC422AE4B621FA9DED47ADAE7E /* SalesManNetwork-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01C4A2CF6A9FC1BB916E047CF247E245 /* SalesManLogin-SalesManLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD6265429D16C719DE945B21F6802DA /* Build configuration list for PBXNativeTarget "SalesManLogin-SalesManLogin" */;
+			buildPhases = (
+				6DA748392CB078309287C7C97B7C2047 /* Sources */,
+				71CC050B6CA02215F17FC4C43ECF17BD /* Frameworks */,
+				7F60CAC9D5EC91C13D6529E76BA449C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SalesManLogin-SalesManLogin";
+			productName = "SalesManLogin-SalesManLogin";
+			productReference = 30D1B427C9344F8B97FE956616A4DCBD /* SalesManLogin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				FE8E0446C3B3B52779E8DE373E495A61 /* Sources */,
+				B57774E30FD88AE26F9037E1360E947B /* Frameworks */,
+				197B7877D5D346F405BDD059EF96DBDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 0BB45CC4B79D390FDCEA27F6C950FF0E /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B24ADA75424F8D30DF94F6257072722F /* Pods-SalesManLogin_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81E78BF108674EBCCBFD9DEBC0C83FD7 /* Build configuration list for PBXNativeTarget "Pods-SalesManLogin_Example" */;
+			buildPhases = (
+				05AAC143768A869AE76526EB36A4CA3F /* Sources */,
+				BA4D25E5280E9C64F1C85F1147951493 /* Frameworks */,
+				6393A1D3542CC5C191414037DF102275 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71668D1F84242059E6FD4B2D49B97C9 /* PBXTargetDependency */,
+				E93DC9BAEBBB936E54D6D563F78725E5 /* PBXTargetDependency */,
+				D0CC19C20A091FC54172C141F8C23124 /* PBXTargetDependency */,
+				8BCB5BEC35021870492E80FA3BFCA23D /* PBXTargetDependency */,
+				486DA882D77F74F475B4AF26B0E0E653 /* PBXTargetDependency */,
+				EE94FFF5D2AA74E3D2CC073C37318619 /* PBXTargetDependency */,
+			);
+			name = "Pods-SalesManLogin_Example";
+			productName = "Pods-SalesManLogin_Example";
+			productReference = 9CF17F503FB541997A7C960A5C160B09 /* Pods_SalesManLogin_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8E0497EF8998E1C832D882AAF09E27B /* SalesManGlobal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D9C46C21AD840A1E21D0710833828C /* Build configuration list for PBXNativeTarget "SalesManGlobal" */;
+			buildPhases = (
+				8CE22F7E26827B76F7883E9C94C86C86 /* Sources */,
+				3F5E25677132F886D08985A60BF0F055 /* Frameworks */,
+				5A6F9D5AA7F3E3D1BC6A31674200C39E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09254CEF7E56E133DBEA523406F45EBB /* PBXTargetDependency */,
+			);
+			name = SalesManGlobal;
+			productName = SalesManGlobal;
+			productReference = 752D4939A3B7F6FF502B20755BF0818F /* SalesManGlobal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0E94B6086B02AF4437A6DF94E384FF0 /* SalesManNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C57DB4C9588FE94C8FE34BBD6BDC4DE /* Build configuration list for PBXNativeTarget "SalesManNetwork" */;
+			buildPhases = (
+				6398B9363142A319C9217012FD456BA4 /* Sources */,
+				F0ED933A3940A27C0FB48CAD6DE61A30 /* Frameworks */,
+				938C1B1B37E32521D3EA3A5B4FF94542 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D79A3CC17EF1012A6817CE89D3E06B15 /* PBXTargetDependency */,
+			);
+			name = SalesManNetwork;
+			productName = SalesManNetwork;
+			productReference = 7F9C7148EC78E21E19FA30329CDEC41B /* SalesManNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAB09427197542CDD525CDBBB6263FCF /* SalesManLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF28C404143F86B1FA52A95654DB356 /* Build configuration list for PBXNativeTarget "SalesManLogin" */;
+			buildPhases = (
+				40C1965E6DFD891B2AF0BFA9D19F2E9E /* Sources */,
+				AE6B9D9318D455585A17E681C3E9E451 /* Frameworks */,
+				ABECA616BDE3446F79BFE9582D78E5B3 /* Resources */,
+				7F937D17E6100A90EA9A9AB9133A5C0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A19D9402D2B541F8AD2196DF78E7C64 /* PBXTargetDependency */,
+				84C22B61C049B13AC42F82A242E10230 /* PBXTargetDependency */,
+				87A6D033AFD516CC23BAE73AB0BF6FB0 /* PBXTargetDependency */,
+				C791E9A4921331EB667568520024BDBC /* PBXTargetDependency */,
+				56DA05919CC54F57F53C485F24DECCE3 /* PBXTargetDependency */,
+				84618207DAC1990EA5E3F933E821953B /* PBXTargetDependency */,
+			);
+			name = SalesManLogin;
+			productName = SalesManLogin;
+			productReference = 075056A17DBC4FBAAA648A5E725837DB /* SalesManLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1AB0650437440B7AD69628483EF154B /* SalesManDataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E5EF78E7D5675F40090B34971745E3 /* Build configuration list for PBXNativeTarget "SalesManDataStorage" */;
+			buildPhases = (
+				9E2C4F03780E1F31932B010A3239FA03 /* Sources */,
+				35A9CC74DB10F50AE5620036CE69292C /* Frameworks */,
+				0E94E19968865D660116A740920B2CEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalesManDataStorage;
+			productName = SalesManDataStorage;
+			productReference = E336FC524E04643CB477AD893C16B833 /* SalesManDataStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25909703FE8BF472066161C98342A956 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				4CC771DB3008E2E9E454A6212D41A5E9 /* Sources */,
+				6DE9B3A8689C804A43D970F1265675A4 /* Frameworks */,
+				437E0B8BDA100834FD20877E5FCDC59D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = F5F9D0298ED8AAA4131F3C9EFD633EB3 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF9B86CCA8E6CF893BFFE737B02059C2 /* Pods-SalesManLogin_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E58B6FD3961E740BF0B59B98CB5E0A /* Build configuration list for PBXNativeTarget "Pods-SalesManLogin_Tests" */;
+			buildPhases = (
+				0179D9A51F09D560F7744D448E3B28BB /* Sources */,
+				42505DFDBD19A71C4BC7F4E1940EE14F /* Frameworks */,
+				3F1CF90EFEE9A1C0F61EA483A618D613 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SalesManLogin_Tests";
+			productName = "Pods-SalesManLogin_Tests";
+			productReference = 21816F35FF7CFB83C1118106EE93EC8D /* Pods_SalesManLogin_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C1E17C0A05F65BFEFC275672BD334036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */,
+				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
+				B24ADA75424F8D30DF94F6257072722F /* Pods-SalesManLogin_Example */,
+				FF9B86CCA8E6CF893BFFE737B02059C2 /* Pods-SalesManLogin_Tests */,
+				F1AB0650437440B7AD69628483EF154B /* SalesManDataStorage */,
+				B8E0497EF8998E1C832D882AAF09E27B /* SalesManGlobal */,
+				EAB09427197542CDD525CDBBB6263FCF /* SalesManLogin */,
+				01C4A2CF6A9FC1BB916E047CF247E245 /* SalesManLogin-SalesManLogin */,
+				D0E94B6086B02AF4437A6DF94E384FF0 /* SalesManNetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F60CAC9D5EC91C13D6529E76BA449C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7B2A8E3372EC47B614746FB09EB618 /* Images.xcassets in Resources */,
+				53FB778D3479E27CF55D9BC2BA280D7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABECA616BDE3446F79BFE9582D78E5B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A21B0809BC23FE26908EB296A9661EE /* SalesManLogin.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0179D9A51F09D560F7744D448E3B28BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BDB9567567F376AC27C5A65E42920C /* Pods-SalesManLogin_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05AAC143768A869AE76526EB36A4CA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6BB2DC2C6B80055DA93BB4A83842F /* Pods-SalesManLogin_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C1965E6DFD891B2AF0BFA9D19F2E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB55DD7CD31597EABFD0FBFAEC890DC /* APIReformer.swift in Sources */,
+				2A2D72C83E133C89394454858E7DA451 /* SalesManLogin-dummy.m in Sources */,
+				43802EA5419C7C717C46A1139850EF74 /* SWColor.swift in Sources */,
+				9788C9F9C0230BC74DEC065A8EA967EC /* SWImage.swift in Sources */,
+				D093FAD2F013C526C3AD38F4CE71D268 /* SWLeftViewTextFiled.swift in Sources */,
+				9E50A4E2C500D632E689B2C1978977F1 /* Target_Login.swift in Sources */,
+				9881B0E8310FDB28759E69425373B980 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC771DB3008E2E9E454A6212D41A5E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7099E4035C06D3116DA2586EFE563C0B /* AFAutoPurgingImageCache.m in Sources */,
+				939EF882233B22D0321A70F6DADED11F /* AFHTTPSessionManager.m in Sources */,
+				B46FE8C00C2CDDE0B4790FFD3DC961A4 /* AFImageDownloader.m in Sources */,
+				EA23726556D213DB485BD1791C7164CF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				4C321BA8844AA4C44D4416CC6948DF2B /* AFNetworking-dummy.m in Sources */,
+				A12A3BC640B690479F345A49C6C48209 /* AFNetworkReachabilityManager.m in Sources */,
+				F30950E63F3D8D6C07FFB50C5971116E /* AFSecurityPolicy.m in Sources */,
+				E5CD5C797956697DDCC98A3EAC7E99E3 /* AFURLRequestSerialization.m in Sources */,
+				3C9E113B7712442B4BCB59AB7EEC2085 /* AFURLResponseSerialization.m in Sources */,
+				4C5DA96F7CAC26975EEEBD7450FF214D /* AFURLSessionManager.m in Sources */,
+				C257BE809D4C4357A8EB7118960E3143 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				8A1EB96C607F92E8AA20676F9A4BC7D9 /* UIButton+AFNetworking.m in Sources */,
+				6AB8F78680B3470391219F11D51A1DE7 /* UIImageView+AFNetworking.m in Sources */,
+				6595C6295B9EBBF40751A376239681FD /* UIProgressView+AFNetworking.m in Sources */,
+				4AA3A9FC9AAD94C226CA975946C9395B /* UIRefreshControl+AFNetworking.m in Sources */,
+				3345805C0D8E8D0726F7E5981DA61A5F /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6398B9363142A319C9217012FD456BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB5E76D50FE5D28007526DE8A66C35C /* SalesManAFNetworkAPI.swift in Sources */,
+				4DA5394D94AA3C2402D06CA85B30E4A3 /* SalesManNetwork-dummy.m in Sources */,
+				1B7AD4ACF895D6103D15D03C24E497D5 /* SWAFNParameterConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA748392CB078309287C7C97B7C2047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE22F7E26827B76F7883E9C94C86C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0F1AD65BB632C97E8F116115328FD8 /* SalesManGlobal-dummy.m in Sources */,
+				27137A77B4C8AEA80EFC8A28A078263E /* SWHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E2C4F03780E1F31932B010A3239FA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7309ACF68C1B19BDDBDFE68DA39F873 /* SalesManDataStorage-dummy.m in Sources */,
+				08F9F300F4FC3D9E1A167BC435D5E1AD /* SWDataStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8E0446C3B3B52779E8DE373E495A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */,
+				897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09254CEF7E56E133DBEA523406F45EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = A28A9992BD44D77EF3275A0521F39879 /* PBXContainerItemProxy */;
+		};
+		486DA882D77F74F475B4AF26B0E0E653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManLogin;
+			target = EAB09427197542CDD525CDBBB6263FCF /* SalesManLogin */;
+			targetProxy = A98CEDF98AB163CD73F6CDB22BADB33D /* PBXContainerItemProxy */;
+		};
+		56DA05919CC54F57F53C485F24DECCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SalesManLogin-SalesManLogin";
+			target = 01C4A2CF6A9FC1BB916E047CF247E245 /* SalesManLogin-SalesManLogin */;
+			targetProxy = 73E7D31580B3638CB5ECCB9DEAEB055B /* PBXContainerItemProxy */;
+		};
+		84618207DAC1990EA5E3F933E821953B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManNetwork;
+			target = D0E94B6086B02AF4437A6DF94E384FF0 /* SalesManNetwork */;
+			targetProxy = 637822F9B1B7A2654048EDF7C0AF0034 /* PBXContainerItemProxy */;
+		};
+		84C22B61C049B13AC42F82A242E10230 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = 70A8AF0476BA640A14B0956EBCACB1DD /* PBXContainerItemProxy */;
+		};
+		87A6D033AFD516CC23BAE73AB0BF6FB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManDataStorage;
+			target = F1AB0650437440B7AD69628483EF154B /* SalesManDataStorage */;
+			targetProxy = B152994DC91B6287D7D33CBCE98CDF21 /* PBXContainerItemProxy */;
+		};
+		8A19D9402D2B541F8AD2196DF78E7C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */;
+			targetProxy = 55D053F2DAEF206A9F899279931DBBA7 /* PBXContainerItemProxy */;
+		};
+		8BCB5BEC35021870492E80FA3BFCA23D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManGlobal;
+			target = B8E0497EF8998E1C832D882AAF09E27B /* SalesManGlobal */;
+			targetProxy = A1481AEF9F9E1198E9AD5DDE5F988DD9 /* PBXContainerItemProxy */;
+		};
+		C791E9A4921331EB667568520024BDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManGlobal;
+			target = B8E0497EF8998E1C832D882AAF09E27B /* SalesManGlobal */;
+			targetProxy = BDCAE56A2AB245E36621F23920D36DC4 /* PBXContainerItemProxy */;
+		};
+		D0CC19C20A091FC54172C141F8C23124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManDataStorage;
+			target = F1AB0650437440B7AD69628483EF154B /* SalesManDataStorage */;
+			targetProxy = 8554F96AEB937CA90FD51FC1D684ABCF /* PBXContainerItemProxy */;
+		};
+		D79A3CC17EF1012A6817CE89D3E06B15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */;
+			targetProxy = 5D1A41030F94668B9FC4BB08FCA5A3D6 /* PBXContainerItemProxy */;
+		};
+		E71668D1F84242059E6FD4B2D49B97C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = F4160500DCEA3DA3E93FBA579E88CA0A /* AFNetworking */;
+			targetProxy = E3E5FEC33C1367A084E186A220CBDA9E /* PBXContainerItemProxy */;
+		};
+		E93DC9BAEBBB936E54D6D563F78725E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = CD405FB98A312EE1D561A82EB3A15E93 /* PBXContainerItemProxy */;
+		};
+		EE94FFF5D2AA74E3D2CC073C37318619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SalesManNetwork;
+			target = D0E94B6086B02AF4437A6DF94E384FF0 /* SalesManNetwork */;
+			targetProxy = 8B55A4733A55F864A59F053FE86EFEEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2201AFB425D730EFA706E2F44434101D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManLogin/SalesManLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManLogin/SalesManLogin.modulemap";
+				PRODUCT_NAME = SalesManLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		59841319578EE5DF983E23A900B47845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5328B873BD3C12FDDCEE42B345C0C279 /* SalesManDataStorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManDataStorage/SalesManDataStorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManDataStorage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManDataStorage/SalesManDataStorage.modulemap";
+				PRODUCT_NAME = SalesManDataStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62B172E6B93A05E472567F03D4D4206D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50DCE189900FEE7898FBC0D71706432 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64ACE8E62061AE6B7F12455D21177E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SalesManLogin";
+				INFOPLIST_FILE = "Target Support Files/SalesManLogin/ResourceBundle-SalesManLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SalesManLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7A00C10CA29C8E6A3FFAA4ACBF6915F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD4B71A2011BC99EDDFBE53C43F1A7B /* Pods-SalesManLogin_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SalesManLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SalesManLogin_Tests/Pods-SalesManLogin_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SalesManLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		806AB3B0F5543EBE47F2CAA487390618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6DA121730E2286CA2B8223B49F763C /* SalesManGlobal.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManGlobal/SalesManGlobal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManGlobal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManGlobal/SalesManGlobal.modulemap";
+				PRODUCT_NAME = SalesManGlobal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9D0201C720FFF546DBD6114BE8CDF41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SalesManLogin";
+				INFOPLIST_FILE = "Target Support Files/SalesManLogin/ResourceBundle-SalesManLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SalesManLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A235C0AEAB1CC8BC31407F234AD3329D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79924EF4C86E38894B7218910F427DC5 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2CFD996445E28A503511886E55DB640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C96F708BC17F8E539FACB30A60BC219 /* Pods-SalesManLogin_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SalesManLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SalesManLogin_Example/Pods-SalesManLogin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SalesManLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A58872ACAE678A44C6357110A249F76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD85FB9807F65FB11C664F6E41473579 /* SalesManNetwork.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManNetwork/SalesManNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManNetwork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManNetwork/SalesManNetwork.modulemap";
+				PRODUCT_NAME = SalesManNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B93F12A0CA2964B344B1E091104BDE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD85FB9807F65FB11C664F6E41473579 /* SalesManNetwork.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManNetwork/SalesManNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManNetwork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManNetwork/SalesManNetwork.modulemap";
+				PRODUCT_NAME = SalesManNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA51722E1FCB7A32CA59D6C3645AC0B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9359E45B0FC748799E2D94FFE2F4B422 /* Pods-SalesManLogin_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SalesManLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SalesManLogin_Example/Pods-SalesManLogin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SalesManLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA9BB59B34D2BBCB7784143539B97FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79924EF4C86E38894B7218910F427DC5 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD356F7AC484559B7D0083E37DC5BBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438E3C5DF0EBBA4BBDE61D01959C82BF /* SalesManLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManLogin/SalesManLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManLogin/SalesManLogin.modulemap";
+				PRODUCT_NAME = SalesManLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE2A50D43AA4F6BEEB6E3D5FB812DEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5328B873BD3C12FDDCEE42B345C0C279 /* SalesManDataStorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManDataStorage/SalesManDataStorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManDataStorage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManDataStorage/SalesManDataStorage.modulemap";
+				PRODUCT_NAME = SalesManDataStorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EAF862DDCC91AD02A705F8BB1D31B68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50DCE189900FEE7898FBC0D71706432 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFF57E9EB1295DB8FEB129DE10949856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6DA121730E2286CA2B8223B49F763C /* SalesManGlobal.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SalesManGlobal/SalesManGlobal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SalesManGlobal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SalesManGlobal/SalesManGlobal.modulemap";
+				PRODUCT_NAME = SalesManGlobal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F42A5CB995C418E443336D7D265E3F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF582F5DD7BC63E747A509468253171 /* Pods-SalesManLogin_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SalesManLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SalesManLogin_Tests/Pods-SalesManLogin_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SalesManLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25909703FE8BF472066161C98342A956 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9BB59B34D2BBCB7784143539B97FC6 /* Debug */,
+				A235C0AEAB1CC8BC31407F234AD3329D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E58B6FD3961E740BF0B59B98CB5E0A /* Build configuration list for PBXNativeTarget "Pods-SalesManLogin_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42A5CB995C418E443336D7D265E3F6C /* Debug */,
+				7A00C10CA29C8E6A3FFAA4ACBF6915F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C57DB4C9588FE94C8FE34BBD6BDC4DE /* Build configuration list for PBXNativeTarget "SalesManNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58872ACAE678A44C6357110A249F76B /* Debug */,
+				B93F12A0CA2964B344B1E091104BDE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E5EF78E7D5675F40090B34971745E3 /* Build configuration list for PBXNativeTarget "SalesManDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2A50D43AA4F6BEEB6E3D5FB812DEC2 /* Debug */,
+				59841319578EE5DF983E23A900B47845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81E78BF108674EBCCBFD9DEBC0C83FD7 /* Build configuration list for PBXNativeTarget "Pods-SalesManLogin_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CFD996445E28A503511886E55DB640 /* Debug */,
+				BA51722E1FCB7A32CA59D6C3645AC0B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D9C46C21AD840A1E21D0710833828C /* Build configuration list for PBXNativeTarget "SalesManGlobal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806AB3B0F5543EBE47F2CAA487390618 /* Debug */,
+				EFF57E9EB1295DB8FEB129DE10949856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD6265429D16C719DE945B21F6802DA /* Build configuration list for PBXNativeTarget "SalesManLogin-SalesManLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D0201C720FFF546DBD6114BE8CDF41F /* Debug */,
+				64ACE8E62061AE6B7F12455D21177E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF862DDCC91AD02A705F8BB1D31B68F /* Debug */,
+				62B172E6B93A05E472567F03D4D4206D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF28C404143F86B1FA52A95654DB356 /* Build configuration list for PBXNativeTarget "SalesManLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD356F7AC484559B7D0083E37DC5BBE1 /* Debug */,
+				2201AFB425D730EFA706E2F44434101D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

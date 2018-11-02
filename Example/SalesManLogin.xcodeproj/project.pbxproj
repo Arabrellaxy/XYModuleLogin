@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		426A31E99947442C80644ABE /* Pods_SalesManLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44168B29EB8A200CB6B6DA20 /* Pods-SalesManLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManLogin_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManLogin_Tests/Pods-SalesManLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		54C5CBA5FB6F802AFC41B8BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		54C5CBA5FB6F802AFC41B8BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A4749551DF2F13E969FEC92 /* Pods-SalesManLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManLogin_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManLogin_Tests/Pods-SalesManLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SalesManLogin_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesManLogin_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +43,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69A86FE75636E5C37A4673C0 /* Pods_SalesManLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83B73629A95460011C3A7FAF /* SalesManLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SalesManLogin.podspec; path = ../SalesManLogin.podspec; sourceTree = "<group>"; };
+		83B73629A95460011C3A7FAF /* SalesManLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SalesManLogin.podspec; path = ../SalesManLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E04D2B2E53A0F1007E461A3 /* Pods-SalesManLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManLogin_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManLogin_Example/Pods-SalesManLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D6850F59079C3B9B95302332 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6850F59079C3B9B95302332 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FB60B134E1F976321D90753A /* Pods-SalesManLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManLogin_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManLogin_Example/Pods-SalesManLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,11 +271,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SalesManLogin_Example/Pods-SalesManLogin_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SalesManDataStorage/SalesManDataStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/SalesManGlobal/SalesManGlobal.framework",
 				"${BUILT_PRODUCTS_DIR}/SalesManLogin/SalesManLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/SalesManNetwork/SalesManNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesManDataStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesManGlobal.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesManLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesManNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

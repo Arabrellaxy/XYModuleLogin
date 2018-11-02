@@ -1,0 +1,6 @@
+framework module SalesManNetwork {
+  umbrella header "SalesManNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

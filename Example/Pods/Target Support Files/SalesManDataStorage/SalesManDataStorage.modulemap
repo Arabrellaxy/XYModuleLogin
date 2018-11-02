@@ -1,0 +1,6 @@
+framework module SalesManDataStorage {
+  umbrella header "SalesManDataStorage-umbrella.h"
+
+  export *
+  module * { export * }
+}
