@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SalesManLogin'
-  s.version          = '0.1.0'
+  s.version          = '0.3.0'
   s.summary          = 'login api for SW'
   s.swift_version    = '4.0'
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'SalesManLogin/Classes/**/*'
   
    s.resource_bundles = {
-     'SalesManLogin' => ['SalesManLogin/Assets/*']
+     'XYModuleLogin' => ['SalesManLogin/Assets/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
