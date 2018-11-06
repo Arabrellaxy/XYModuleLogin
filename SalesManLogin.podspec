@@ -41,4 +41,5 @@ TODO: Add long description of the pod here.
   s.dependency 'SalesManNetwork'
   s.dependency 'SalesManGlobal'
   s.dependency 'SalesManDataStorage'
+  s.dependency 'Masonry'
 end

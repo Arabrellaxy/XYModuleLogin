@@ -68,8 +68,6 @@ extension ViewController:UITextFieldDelegate{
     }
 }
 
-
-
 //MARK: Button Action
 extension ViewController{
     @objc func rememberPasswordAction() {
@@ -103,7 +101,8 @@ extension ViewController{
                 }
                //store cookie
                 SalesManAFNetworkAPI.shareInstance.saveCookies()
-                //excute callback
+                //dismiss
+                self.dismiss(animated: true, completion: nil)
             } else {
                 //error
                 var message = responseDic.object(forKey: SWGlobal.message) as? String

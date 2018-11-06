@@ -1,7 +1,7 @@
 {
   "name": "SalesManLogin",
-  "version": "0.1.0",
-  "summary": "A short description of SalesManLogin.",
+  "version": "0.4.0",
+  "summary": "login api for SW",
   "swift_version": "4.0",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Arabrellaxy/XYModuleLogin",
@@ -14,14 +14,14 @@
   },
   "source": {
     "git": "https://github.com/Arabrellaxy/XYModuleLogin.git",
-    "tag": "0.1.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "SalesManLogin/Classes/**/*",
   "resource_bundles": {
-    "SalesManLogin": [
+    "XYModuleLogin": [
       "SalesManLogin/Assets/*"
     ]
   },
@@ -33,6 +33,9 @@
 
     ],
     "SalesManDataStorage": [
+
+    ],
+    "Masonry": [
 
     ]
   }

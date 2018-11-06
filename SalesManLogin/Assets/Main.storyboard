@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="Login" id="vXZ-lx-hvc" customClass="ViewController" customModule="SalesManLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="vXZ-lx-hvc" customClass="ViewController" customModule="SalesManLogin" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,7 +40,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inputBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6Z0-nS-Wa3">
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="357"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-Y4-TRL" customClass="SWLeftViewTextFiled" customModule="SalesManLogin" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-Y4-TRL" customClass="SWLeftViewTextFiled" customModule="SalesManLogin">
                                         <rect key="frame" x="25" y="46" width="313" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1AS-cr-Wmu"/>
@@ -49,7 +49,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-f7-LZs" customClass="SWLeftViewTextFiled" customModule="SalesManLogin" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-f7-LZs" customClass="SWLeftViewTextFiled" customModule="SalesManLogin">
                                         <rect key="frame" x="25" y="111" width="313" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="31S-uG-9wP"/>
@@ -129,6 +129,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+        <!--Forget Password View Controller-->
+        <scene sceneID="7c7-Zj-oaR">
+            <objects>
+                <tableViewController id="uy3-MT-Jdl" customClass="SWForgetPasswordViewController" customModule="SalesManLogin" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VFB-CG-pdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="mI0-rV-gut" customClass="ForgetPasswordTableViewCell" customModule="XYModuleLogin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mI0-rV-gut" id="XVL-wg-RPh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6t-4A-pSA">
+                                            <rect key="frame" x="116" y="23" width="202" height="18"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZ1-Hn-UeO">
+                                            <rect key="frame" x="8" y="22" width="100" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="W4k-FF-6uL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCX-oL-AyN">
+                                            <rect key="frame" x="326" y="19" width="41" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CZ1-Hn-UeO" firstAttribute="leading" secondItem="XVL-wg-RPh" secondAttribute="leading" constant="8" id="Qu0-Ok-Xdh"/>
+                                        <constraint firstItem="CZ1-Hn-UeO" firstAttribute="centerY" secondItem="XVL-wg-RPh" secondAttribute="centerY" id="Wy2-Vu-Mx7"/>
+                                        <constraint firstAttribute="trailing" secondItem="NCX-oL-AyN" secondAttribute="trailing" constant="8" id="c7L-wD-Gmc"/>
+                                        <constraint firstItem="NCX-oL-AyN" firstAttribute="centerY" secondItem="XVL-wg-RPh" secondAttribute="centerY" id="hfs-XS-jIH"/>
+                                        <constraint firstItem="V6t-4A-pSA" firstAttribute="centerY" secondItem="XVL-wg-RPh" secondAttribute="centerY" id="kT6-Yj-fRT"/>
+                                        <constraint firstItem="V6t-4A-pSA" firstAttribute="leading" secondItem="CZ1-Hn-UeO" secondAttribute="trailing" constant="8" id="m2W-id-3yy"/>
+                                        <constraint firstItem="NCX-oL-AyN" firstAttribute="leading" secondItem="V6t-4A-pSA" secondAttribute="trailing" constant="8" id="ozW-hK-VnS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actionBtnTrailConstraints" destination="c7L-wD-Gmc" id="jK6-uu-32g"/>
+                                    <outlet property="actionButton" destination="NCX-oL-AyN" id="VsT-ZK-JNu"/>
+                                    <outlet property="titleLabel" destination="CZ1-Hn-UeO" id="0WQ-09-ay8"/>
+                                    <outlet property="valueTextfield" destination="V6t-4A-pSA" id="Tff-Ok-A7a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uy3-MT-Jdl" id="Acm-Q6-XaR"/>
+                            <outlet property="delegate" destination="uy3-MT-Jdl" id="bcb-Ep-4mW"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDa-q3-ie5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994.39999999999998" y="129.98500749625188"/>
         </scene>
     </scenes>
     <resources>

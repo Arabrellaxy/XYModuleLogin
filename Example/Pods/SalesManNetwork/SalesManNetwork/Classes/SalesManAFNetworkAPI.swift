@@ -97,7 +97,7 @@ public class SalesManAFNetworkAPI{
                 
             }
             completion(tempDic)
-        } else if let tempError:NSError = error as? NSError{
+        } else if let tempError:NSError = error as NSError?{
             let tempDic:NSMutableDictionary = NSMutableDictionary.init()
             switch tempError.code {
             case -1009:
@@ -107,6 +107,8 @@ public class SalesManAFNetworkAPI{
                 self.removeCookies()
                 tempDic.setValue(false, forKey: "status")
                 tempDic.setValue(SWError.cookieExpired, forKey: SWGlobal.message)
+                let notificationName = Notification.Name(rawValue: SWNotification.SWCookieExpiredNotification)
+                NotificationCenter.default.post(name: notificationName, object: nil)
             default:
                 tempDic.setValue(false, forKey: "status")
                 tempDic.setValue(tempError.localizedDescription, forKey: SWGlobal.message)

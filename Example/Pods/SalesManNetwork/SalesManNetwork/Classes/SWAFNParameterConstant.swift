@@ -24,3 +24,7 @@ public struct SWError{
     public  static let cookieExpired = "登录信息过期了"
 
 }
+
+public struct SWNotification{
+    public static let SWCookieExpiredNotification = "swCookieExpiredNotification"
+}
