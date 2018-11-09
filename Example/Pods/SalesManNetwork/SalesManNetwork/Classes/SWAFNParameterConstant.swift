@@ -9,8 +9,9 @@ import Foundation
 public struct SWLogin {
     public  static let username = "userAccount"
     public  static let password = "userPass"
-    public  static let path = "login.do"
-
+    public  static let loginPath = "/login.do"
+    public  static let verifyCodePath = "/sw/verify/code/sendVerifyCodeByUserPhone.do"
+    public  static let resetPasswordPath = "/sw/verify/code/findPasswdByPhone.do"
 }
 public struct SWGlobal{
     public  static let callBack = "callBack"

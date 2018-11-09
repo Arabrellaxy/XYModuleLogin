@@ -17,14 +17,14 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - SalesManDataStorage (0.2.0)
-  - SalesManGlobal (0.1.0):
+  - SalesManGlobal (0.2.0):
     - MBProgressHUD
   - SalesManLogin (0.4.0):
     - Masonry
     - SalesManDataStorage
     - SalesManGlobal
     - SalesManNetwork
-  - SalesManNetwork (0.3.0):
+  - SalesManNetwork (0.8.0):
     - AFNetworking
 
 DEPENDENCIES:
@@ -43,9 +43,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SalesManDataStorage: 840a9e70e446d22cea8f270f8d415b990226b2e3
-  SalesManGlobal: b1c290b0ac2be51c5c4131b8f27882cabaf24540
+  SalesManGlobal: 1c2dd40d575979c4f558cda0b85e88c2d6167038
   SalesManLogin: 96b500bc1e39c55e7c957a176e649ac8934e9b95
-  SalesManNetwork: e3e96b69481b8aead1aba62df43bb4c46124b8b2
+  SalesManNetwork: ede3f26445a1d835cadedff4f3a7a644fab7b1ad
 
 PODFILE CHECKSUM: 9b1a8aa609fb8bae3bbc465273b29a017f2173e6
 

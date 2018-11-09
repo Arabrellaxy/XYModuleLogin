@@ -38,6 +38,14 @@ public class ViewController: UIViewController {
     deinit {
         self.removeKeyboardNotification()
     }
+    public override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        super.viewWillAppear(animated)
+    }
+    public override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        super.viewWillAppear(animated)
+    }
 }
 
 //MARK:Storage
@@ -66,13 +74,18 @@ extension ViewController:UITextFieldDelegate{
         }
         return true
     }
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.usernameTF && self.passwordTF.text?.count == 0 {
+            self.storedPasswordForUser()
+        }
+    }
 }
 
 //MARK: Button Action
 extension ViewController{
     @objc func rememberPasswordAction() {
         self.rememberPassword = !self.rememberPassword
-        self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
+        self.resetImageForRememberPassword()
     }
     @objc func loginAction(){
         let whitespace = NSCharacterSet.whitespacesAndNewlines
@@ -84,8 +97,22 @@ extension ViewController{
             self.view.showTextHud(text: "请检查用户名和密码", autoHide: true)
             return
         }
-        let callBack = { (result : NSDictionary) -> (Void) in
-           let status = result.object(forKey: SWGlobal.status) as? Bool
+        self.requestLogin(username: userName!, password: password!)
+    }
+    @objc func forgetPasswordAction(){
+        let bundle1 = Bundle.init(for: ViewController.classForCoder())
+        let path = bundle1.path(forResource: "XYModuleLogin", ofType: "bundle")!
+        let bundle:Bundle = Bundle.init(path:path)!
+        let vc = UIStoryboard.init(name: "Main", bundle: bundle).instantiateViewController(withIdentifier: "forgetpassword")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+//MARK:Network
+extension ViewController{
+    func requestLogin(username:String,password:String) {
+        let callBack = { (result : NSDictionary)  in
+            self.view.hideHud()
+            let status = result.object(forKey: SWGlobal.status) as? Bool
             guard let _ = status else {
                 return
             }
@@ -95,11 +122,11 @@ extension ViewController{
                 let userID:String  = responseDic.object(forKey: "userId") as! String
                 //store username and password
                 if self.rememberPassword {
-                   let _ = SWDataStorage.init().storeUserInfo(userID: userID, username: userName, password: password)
+                    let _ = SWDataStorage.init().storeUserInfo(userID: userID, username: username, password: password)
                 } else {
-                   let _ = SWDataStorage.init().storeUserInfo(userID: userID, username: userName, password: nil)
+                    let _ = SWDataStorage.init().storeUserInfo(userID: userID, username: username, password: nil)
                 }
-               //store cookie
+                //store cookie
                 SalesManAFNetworkAPI.shareInstance.saveCookies()
                 //dismiss
                 self.dismiss(animated: true, completion: nil)
@@ -114,15 +141,13 @@ extension ViewController{
                 self.view.showTextHud(text: message!, autoHide: true)
             }
         }
-        SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:self.usernameTF.text!,
-                                                           SWLogin.password:self.passwordTF.text!,
+        self.view.showLoadingHud(loadingText: "正在登录")
+        SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:username,
+                                                           SWLogin.password:password,
                                                            SWGlobal.callBack:callBack])
     }
-    @objc func forgetPasswordAction(){
-        
-    }
 }
-//MARK: awake from storyboard
+//MARK: Private
 extension ViewController{
     func standardizeStyle() {
         self.titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
@@ -169,6 +194,11 @@ extension ViewController{
             ])
         self.forgetPasswordBtn.setAttributedTitle(forgetTitle, for: .normal)
         self.forgetPasswordBtn.addTarget(self, action: #selector(forgetPasswordAction), for: .touchUpInside)
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.swThemeColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        let dict:NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 18)]
+        self.navigationController?.navigationBar.titleTextAttributes = dict as? [NSAttributedStringKey : AnyObject]
     }
     func standardizeTFStyle(textField:SWLeftViewTextFiled) {
         textField.leftViewMode = .always
@@ -176,6 +206,25 @@ extension ViewController{
         textField.layer.borderColor = UIColor.swGrayTextColor().cgColor
         textField.layer.cornerRadius = 22.5
         textField.delegate = self
+    }
+    func storedPasswordForUser() {
+        let password:String? = SWDataStorage.init().passwordForUser(username: self.usernameTF.text)
+        guard let _ = password else {
+            return
+        }
+        let alertVC = UIAlertController.init(title: "登录", message: "是否填充在钥匙串中记录的密码", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction.init(title: "填充", style: .default, handler: { (action) in
+            self.passwordTF.text = password
+            self.rememberPassword = true
+            self.resetImageForRememberPassword()
+        }))
+        alertVC.addAction(UIAlertAction.init(title: "不了", style: .cancel, handler: { (action) in
+            self.passwordTF.becomeFirstResponder()
+        }))
+        self.present(alertVC, animated: true, completion: nil)
+    }
+    func resetImageForRememberPassword() {
+         self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
     }
 }
 //MARK:keyboard event
