@@ -144,7 +144,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1R-sA-Vuj">
-                                    <rect key="frame" x="10" y="10" width="355" height="44"/>
+                                    <rect key="frame" x="10" y="10" width="580" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="2U1-uU-e8w"/>
                                     </constraints>
@@ -170,7 +170,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6t-4A-pSA">
-                                            <rect key="frame" x="116" y="23" width="202" height="18"/>
+                                            <rect key="frame" x="116" y="23" width="427" height="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -185,7 +185,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCX-oL-AyN">
-                                            <rect key="frame" x="326" y="19" width="41" height="28"/>
+                                            <rect key="frame" x="551" y="19" width="41" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <state key="normal" title="Button"/>
                                         </button>

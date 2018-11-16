@@ -157,14 +157,14 @@ extension ViewController{
         self.standardizeTFStyle(textField: self.passwordTF)
         
         self.usernameTF.placeholder = "请输入用户名"
-        self.usernameTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "user"))
+        self.usernameTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "user", classCoder: self.classForCoder, bundleName: bundleName))
         self.usernameTF.returnKeyType = .next
         self.passwordTF.isSecureTextEntry = true
         self.passwordTF.clearsOnBeginEditing = true
         self.passwordTF.placeholder = "请输入密码"
 
-        self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
-        self.passwordTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "password"))
+        self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected", classCoder: self.classForCoder, bundleName: bundleName), for: .normal)
+        self.passwordTF.leftView = UIImageView.init(image: UIImage.imageNamed(name: "password", classCoder: self.classForCoder, bundleName: bundleName))
         self.passwordTF.returnKeyType = .done
         
         let attributedTitle = NSAttributedString.init(string: "记住密码", attributes:
@@ -184,7 +184,7 @@ extension ViewController{
             ])
         self.loginBtn.setAttributedTitle(loginTitle, for: .normal)
         self.loginBtn.titleEdgeInsets = .init(top: 0, left: 0, bottom: 4, right: 0)
-        self.loginBtn.setBackgroundImage(UIImage.imageNamed(name: "loginBtn"), for: .normal)
+        self.loginBtn.setBackgroundImage(UIImage.imageNamed(name: "loginBtn", classCoder: self.classForCoder, bundleName: bundleName), for: .normal)
         self.loginBtn.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
 
         let forgetTitle = NSAttributedString.init(string: "忘记密码?", attributes:
@@ -224,7 +224,7 @@ extension ViewController{
         self.present(alertVC, animated: true, completion: nil)
     }
     func resetImageForRememberPassword() {
-         self.rememberPasswordBtn.setImage(UIImage.imageNamed(name: self.rememberPassword ? "checkSelected" : "checkUnselected"), for: .normal)
+         self.rememberPasswordBtn.setImage(UIImage.imageNamed(name:  self.rememberPassword ? "checkSelected" : "checkUnselected", classCoder: self.classForCoder, bundleName: bundleName), for: .normal)
     }
 }
 //MARK:keyboard event
